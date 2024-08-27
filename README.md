@@ -1,6 +1,8 @@
 ﻿# collegedunia task
 # Backend API for Book Management
 
+## Postman collection : https://api.postman.com/collections/34688495-43b06744-cc62-40da-8376-e0b10d790453?access_key=PMAT-01J6AJJW895JYTZER9NXY7PR6C
+
 ## Overview
 
 This project is a backend API for managing books. It is built using Node.js and Express, with MongoDB as the database. The API provides endpoints for creating, reading, updating, and deleting books.
