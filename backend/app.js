@@ -5,6 +5,6 @@ app.use(express.json());
 
 const product = require("./routes/booksRoute");
 
-app.use("/api/v1", product);
+app.use("/api", product);
 
 module.exports = app
