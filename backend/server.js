@@ -30,3 +30,8 @@ process.on("unhandledRejection", (err) =>{
         process.exit(1);
     });
 });
+
+/**
+ * various errors like uncaught exceptions, unhandled promise rejection, wrong mongodb id error and duplicate key entered 
+ * errors have been handled gracefully
+ */

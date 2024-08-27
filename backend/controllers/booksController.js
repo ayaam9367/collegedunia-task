@@ -1,3 +1,14 @@
+/**
+ * Error Handler is used to send errors to the 'next' 
+ * 
+ * catchAsyncErrors method is used to reduce the use of try-catch method by developing a global try-catch. All the 
+ * async errors are sent to this method which then implements a promis to catch errors
+ * 
+ * ApiFeatures are used to implement pagination, search, filter, and sort the results
+ * 
+ * NOTE : results per page has been limited to 5 but can be modified as per needs
+ */
+
 const Books = require("../models/booksModel");
 const ErrorHandler = require("../utils/errorHandler");
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");

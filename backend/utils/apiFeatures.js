@@ -1,3 +1,17 @@
+/**
+ * search : search feature can only be implemented on title of the book but code can be modified to 
+ * accept author instead of title
+ * 
+ * filter : this method is used for additional filtering capabilities for future business requirements like filtering
+ * based on genre, category, price. etc
+ * filtering based on price will require additional modifications by potentially developing a regex query to accept
+ * values greater than or less than 
+ * 
+ * pagination : results per page is 5
+ * 
+ * sorting : results are sorted based on title or publishedDate and can accept a combination of the two as well
+ * default sorting is based on createdAt
+ */
 class ApiFeatures {
   constructor(query, queryStr) {
     this.query = query;
@@ -41,7 +55,7 @@ class ApiFeatures {
 
   applySort() {
     if (this.queryStr.sort) {
-      const sortBy = this.queryStr.sort;
+      const sortBy = this.queryStr.sort.split(',').join(' ');
       console.log(sortBy);
       if (sortBy === "title") {
         console.log(`sorting by title`);
@@ -54,7 +68,7 @@ class ApiFeatures {
     } else {
       //default sorting
       console.log(`default sorting`);
-      this.query = this.query.sort("-title");
+      this.query = this.query.sort("createdAt");
     }
 
     return this;
