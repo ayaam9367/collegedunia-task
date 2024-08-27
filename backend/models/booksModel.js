@@ -18,7 +18,7 @@ const booksSchema = mongoose.Schema({
     },
 
     publishedDate : {
-        type : Date,
+        type : Date, 
     },
 
     createdAt : {
