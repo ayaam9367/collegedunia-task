@@ -57,9 +57,13 @@ Ensure MongoDB is running. If you have a local MongoDB server, it should be runn
 
 ## Endpoints:
  POST /api/books: Create a new book entry.
+ 
  GET /api/books: Retrieve a list of all books.
+ 
  GET /api/books/:id: Retrieve details of a specific book by its ID.
+ 
  PUT /api/books/:id: Update a book's information by its ID.
+ 
  DELETE /api/books/:id: Delete a specific book by its ID.
 
 ## Contributing
