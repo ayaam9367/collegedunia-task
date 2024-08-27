@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "backend/server.js",
   "scripts": {
-    "test": "mocha 'test-cases/**/*.spec.mjs'",
+    "test": "mocha 'test/**/*.spec.mjs' --timeout 10000",
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js"
   },
@@ -18,7 +18,10 @@
   "devDependencies": {
     "@types/chai": "^4.3.18",
     "@types/express": "^4.17.21",
+    "@types/sinon": "^17.0.3",
     "chai": "^5.1.1",
-    "mocha": "^10.7.3"
+    "chai-http": "^5.0.0",
+    "mocha": "^10.7.3",
+    "sinon": "^18.0.0"
   }
 }
